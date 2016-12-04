@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map
+    </ion-title>
+    <!-- <ion-input type=number style="border: 1px solid black" ></ion-input>
+    <ion-input type=number style="border: 1px solid black" [(ngModel)]="y"></ion-input> -->
+    <ion-buttons end>
+      <button ion-button (click)="showMyLocation()"><ion-icon name="add"></ion-icon>Show my location</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div #map id="map"></div>
+</ion-content>
+
+<ion-footer>
+  <ion-input type=number class="input" [(ngModel)]="x" disabled="true"></ion-input>
+  <ion-input type=number class="input" [(ngModel)]="y" disabled="true"></ion-input>
+</ion-footer>
