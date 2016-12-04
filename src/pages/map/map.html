@@ -9,9 +9,17 @@
       <button ion-button (click)="showMyLocation()"><ion-icon name="add"></ion-icon>Show my location</button>
     </ion-buttons>
   </ion-navbar>
+  <div>
+    <ion-searchbar #targetlocation id="targetLocation" [(ngModel)]="targetLocation"></ion-searchbar>
+    <button ion-button icon-left (click)="addTragetLocation(targetLocation)">
+       <ion-icon name="search"></ion-icon>Search Loaction
+    </button>
+  </div>
 </ion-header>
 
+
 <ion-content>
+
   <div #map id="map"></div>
 </ion-content>
 
