@@ -80,6 +80,7 @@ export class MapPage {
     var input = <HTMLInputElement>document.getElementsByClassName("searchbar-input")[0];
 
     var address = input.value;
+    console.log(address);
     // this.targetLocation = "";
     // this.geocoder.geocode({ 'address': address }, function(results, status) {
     //   if (status == 'OK') {
